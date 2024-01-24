@@ -30,9 +30,17 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 1;
 }
 
 .controlColumn {
   width: 50%;
+}
+
+.perspectiveColorBlock {
+  background-color: hsl(0deg 0% 75%);
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
 }
