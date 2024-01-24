@@ -40,54 +40,53 @@ function App() {
         </header>
         <div className={styles.controlColumn}>
           <ControlPane
-            title="Bodies"
-            options={bodyOptions}
-            currentOption={body}
-            handleSelectOption={setBody}
+              title="Bodies"
+              options={bodyOptions}
+              currentOption={body}
+              handleSelectOption={setBody}
           />
           <ControlPane
-            title="Heads"
-            options={headOptions}
-            currentOption={head}
-            handleSelectOption={setHead}
+              title="Heads"
+              options={headOptions}
+              currentOption={head}
+              handleSelectOption={setHead}
           />
           <ControlPane
-            title="Faces"
-            options={faceOptions}
-            currentOption={face}
-            handleSelectOption={setFace}
+              title="Faces"
+              options={faceOptions}
+              currentOption={face}
+              handleSelectOption={setFace}
           />
           <ControlPane
-            title="Accessories"
-            options={accessoryOptions}
-            currentOption={accessory}
-            handleSelectOption={setAccessory}
+              title="Accessories"
+              options={accessoryOptions}
+              currentOption={accessory}
+              handleSelectOption={setAccessory}
           />
           <ControlPane
-            title="Skin Color"
-            options={skinColorOptions}
-            currentOption={skinColor}
-            handleSelectOption={setSkinColor}
+              title="Skin Color"
+              options={skinColorOptions}
+              currentOption={skinColor}
+              handleSelectOption={setSkinColor}
           />
           <ControlPane
-            title="Clothing Color"
-            options={clothesColorOptions}
-            currentOption={clothesColor}
-            handleSelectOption={setClothesColor}
+              title="Clothing Color"
+              options={clothesColorOptions}
+              currentOption={clothesColor}
+              handleSelectOption={setClothesColor}
+          />
+        </div>
+        <div className={styles.characterWrapper}>
+          <Character
+              body={body}
+              head={head}
+              face={face}
+              accessory={accessory}
+              skinColor={skinColor}
+              clothesColor={clothesColor}
           />
         </div>
       </MaxWidthWrapper>
-
-      <div className={styles.characterWrapper}>
-        <Character
-          body={body}
-          head={head}
-          face={face}
-          accessory={accessory}
-          skinColor={skinColor}
-          clothesColor={clothesColor}
-        />
-      </div>
     </main>
   );
 }
